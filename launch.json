@@ -1,0 +1,10 @@
+{
+  "type": "java",
+  "name": "demo",
+  "request": "launch",
+  "cwd": "${workspaceFolder}",
+  "console": "internalConsole",
+  "stopOnEntry": false,
+  "mainClass": "org.springframework.samples.petclinic.PetClinicApplication",
+  "projectName": "spring-petclinic"
+}

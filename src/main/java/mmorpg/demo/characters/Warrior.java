@@ -1,4 +1,4 @@
-package mmorpg.demo;
+package mmorpg.demo.characters;
 
 public class Warrior extends character {
     

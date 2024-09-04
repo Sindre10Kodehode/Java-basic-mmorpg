@@ -1,9 +1,9 @@
-package mmorpg.demo;
+package mmorpg.demo.characters;
 
 public abstract class character {
 
-    private String name;
-    private int attack;
+    private final String name;
+    private final int attack;
     private int health;
 
  public character ( String name, int attack, int health ) {

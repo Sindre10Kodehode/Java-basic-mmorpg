@@ -1,6 +1,7 @@
 package mmorpg.demo;
 
 import jakarta.annotation.PostConstruct;
+import mmorpg.demo.characters.DragonRider;
 import mmorpg.demo.characters.Mage;
 import mmorpg.demo.characters.Warrior;
 import org.springframework.stereotype.Service;
@@ -8,8 +9,6 @@ import org.springframework.stereotype.Service;
 @Service
 public class Test {
 
-    private Abilities abilities;
-    
     @PostConstruct
     public void uppsi(){
 
@@ -17,7 +16,16 @@ public class Test {
 
     Mage sander = new Mage("Sander");
 
-    abilities.combat(shrek, sander);
+    DragonRider donkey = new DragonRider("Donkey");
+
+    Abilities.combat(shrek, sander);
+
+    Abilities.fly(sander);
+
+    Abilities.fly(donkey);
+
+    Abilities.combat(shrek, donkey);
+
 
     }
 }

@@ -25,7 +25,5 @@ public class Test {
     Abilities.fly(donkey);
 
     Abilities.combat(shrek, donkey);
-
-
     }
 }

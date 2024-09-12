@@ -1,13 +1,11 @@
 package mmorpg.demo;
 
-
 import mmorpg.demo.characters.character;
 import mmorpg.demo.characters.wingedCharacter;
 
 public class Abilities {
 
-    public Abilities() {
-    }
+    public Abilities() {}
 
     private static boolean trueOrFalse() {
         double random = Math.random();

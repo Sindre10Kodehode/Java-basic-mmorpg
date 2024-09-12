@@ -41,7 +41,7 @@ public class Test {
         characterList.add(henrik);
         characterList.add(donkey);
 
-            System.out.println("List = " + characterList.toString());
+            System.out.println("List = " + characterList);
 
         Set<character> characterSet = new HashSet<>(characterList);
 

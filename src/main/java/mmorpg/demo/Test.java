@@ -1,6 +1,7 @@
 package mmorpg.demo;
 
 import jakarta.annotation.PostConstruct;
+import lombok.extern.slf4j.Slf4j;
 import mmorpg.demo.characters.DragonRider;
 import mmorpg.demo.characters.Mage;
 import mmorpg.demo.characters.Warrior;
@@ -12,6 +13,7 @@ import java.util.*;
 import static java.lang.String.valueOf;
 import static java.util.stream.Collectors.toList;
 
+@Slf4j
 @Service
 public class Test {
 
@@ -33,7 +35,6 @@ public class Test {
     Abilities.combat(shrek, donkey);
 
         System.out.println(" ");
-        System.out.println(" ");
 
     List<character> characterList = new ArrayList<>();
         characterList.add(shrek);
@@ -41,7 +42,7 @@ public class Test {
         characterList.add(henrik);
         characterList.add(donkey);
 
-            System.out.println("List = " + characterList);
+            log.info("List = " + characterList);
 
         Set<character> characterSet = new HashSet<>(characterList);
 

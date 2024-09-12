@@ -1,5 +1,8 @@
 package mmorpg.demo.characters;
 
+import lombok.Data;
+
+@Data
 public abstract class character {
 
     private final String name;
